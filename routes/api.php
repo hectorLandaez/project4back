@@ -47,6 +47,8 @@ Route::put('/cambiar-estado-rol/{id}', [RoleController::class, 'cambiarEstado'])
 // Rutas para Paginas
 Route::get('/Paginas', [PaginasController::class, 'index']); 
 Route::post('/create-Paginas', [PaginasController::class, 'store']);
+Route::delete('/Paginas/{id}', [PaginasController::class, 'destroy']);
+Route::put('/Paginas/{id}', [PaginasController::class, 'update']);
 
 
 // Rutas de autenticación con Sanctum
