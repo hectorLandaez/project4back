@@ -30,7 +30,8 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
 
 // Rutas para usuarios (PersonaController)
 Route::get('/usuarios', [PersonaController::class, 'index']);
-Route::get('/usuarios/email', [PersonaController::class, 'indexUsuario']);
+Route::get('/usuarios/email/', [PersonaController::class, 'indexUsuario']);
+Route::get('/usuarios/email/{id}', [PersonaController::class, 'indexUsuario']);
 Route::get('/usuarios/{id}', [PersonaController::class, 'show']);
 Route::delete('/usuarios/{id}', [PersonaController::class, 'destroy']);
 Route::post('/usuarios', [PersonaController::class, 'store']);
