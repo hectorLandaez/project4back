@@ -15,7 +15,6 @@ class RolesTableSeeder extends Seeder
     public function run()
     {
         DB::table('roles')->insert([
-            'idrol' => 1,
             'rol' => 'admin',
             'estado' =>'Activo',
             'created_at' => now(),
@@ -23,7 +22,6 @@ class RolesTableSeeder extends Seeder
         ]);
 
         DB::table('roles')->insert([
-            'idrol' => 2,
             'rol' => 'usuario',
             'estado' =>'Activo',
             'created_at' => now(),

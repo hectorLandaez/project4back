@@ -91,4 +91,19 @@ class personaController extends Controller
         return response()->json(['message' => 'Usuario eliminado con éxito']);
     }
 
+    public function cambiarEstado($id)
+    {
+        $persona = Persona::findOrFail($id);
+         $persona->habilitado = $persona->habilitado === 'si' ? 'no' : 'si';
+        $persona->save();
+
+        Bitacora::create([
+            'codigo'  => 4 ,
+            'mensaje' => "cambio en los permisos del ususario {$id}",
+            'fecha'   => now()->toDateString(),
+            'hora'    => now()->toTimeString(),
+        ]); 
+        return $persona;
+    }
+
 }

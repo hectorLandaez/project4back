@@ -28,7 +28,16 @@ class PaginasController extends Controller
             return response()->json(['error' => 'Error al crear la persona'], 500);
         }
     }
-
+    public function show($id)
+    {
+        $Paginas = Paginas::find($id);
+    
+        if ($Paginas) {
+            return $Paginas;
+        } else {
+            return response()->json(['error' => 'Persona no encontrada'], 404);
+        }
+    }
     public function update(Request $request, $id)
     {
         $usuario = Paginas::find($id);

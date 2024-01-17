@@ -23,13 +23,13 @@ class PersonasTableSeeder extends Seeder
             $email = $faker->unique()->email();
 
             DB::table('personas')->insert([
-                'idpersona' => $faker->unique()->numberBetween(1, 100),
                 'primernombre' => $faker->firstName,
                 'segundonombre' => $faker->firstName,
                 'primerapellido' => $faker->lastName,
                 'segundoapellido' => $faker->lastName,
                 'email' =>  $email,
                 'nombreDeUsuario' => $nombreDeUsuario,
+                'habilitado' => 'si',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
@@ -39,26 +39,24 @@ class PersonasTableSeeder extends Seeder
             
             $email = DB::table('personas')->where('nombreDeUsuario', $nombreDeUsuario)->value('email');
 
-            $idPersona = DB::table('personas')->where('nombreDeUsuario', $nombreDeUsuario)->value('idpersona');
+            $idPersona = DB::table('personas')->where('nombreDeUsuario', $nombreDeUsuario)->value('id');
 
-            DB::table('usuarios')->insert([
+            DB::table('users')->insert([
                 'idrol' => 2,
                 'idpersona' => $idPersona,
-                'nombreDeUsuario' => $nombreDeUsuario,
+                'name' => $nombreDeUsuario,
                 'password' => $faker->password,
                 'email' => $email,
-                'habilitado' => 'si',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
         }
-        DB::table('usuarios')->insert([
+        DB::table('users')->insert([
             'idrol' => 1,
             'idpersona' => 1,
-            'nombreDeUsuario' => 'admin',
-            'clave' =>'admin',
-            'email' => 'admin',
-            'habilitado' => 'si',
+            'name' => 'admin',
+            'password' =>123456,
+            'email' => 'admin@gmail.com',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

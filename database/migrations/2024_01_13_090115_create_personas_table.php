@@ -9,21 +9,28 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
-        Schema::create('personas', function (Blueprint $table) {
-            $table->id('idpersona');
-            $table->unsignedBigInteger('idusuario')->nullable();
-            $table->string('nombreDeUsuario')->nullable(); 
-            $table->string('primernombre')->nullable();
-            $table->string('segundonombre')->nullable();
-            $table->string('primerapellido')->nullable();
-            $table->string('segundoapellido')->nullable();
-            $table->string('email')->nullable();
-            $table->timestamps();
-    
-            $table->foreign('idpersona')->references('id')->on('users')->nullable();
-        });
+            Schema::create('personas', function (Blueprint $table) {
+                $table->id();
+                $table->unsignedBigInteger('idusuario')->nullable();
+                $table->string('nombreDeUsuario')->nullable();
+                $table->string('primernombre')->nullable();
+                $table->string('segundonombre')->nullable();
+                $table->string('primerapellido')->nullable();
+                $table->string('segundoapellido')->nullable();
+                $table->string('email')->nullable();
+                $table->string('habilitado')->default('si');
+                $table->timestamps();
+                
+                $table->foreign('idusuario')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
+
+                          
+            });
+        
     }
     /**
      * Reverse the migrations.

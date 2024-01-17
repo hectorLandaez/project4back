@@ -35,6 +35,7 @@ Route::get('/usuarios/{id}', [PersonaController::class, 'show']);
 Route::delete('/usuarios/{id}', [PersonaController::class, 'destroy']);
 Route::post('/usuarios', [PersonaController::class, 'store']);
 Route::put('/usuarios/{id}', [PersonaController::class, 'update']);
+Route::put('/cambiar/estado/user/{id}', [PersonaController::class, 'cambiarEstado']);
 
 Route::get('/ShowBitacora', [BitacoraController::class, 'index']); 
 
@@ -46,6 +47,7 @@ Route::put('/cambiar-estado-rol/{id}', [RoleController::class, 'cambiarEstado'])
 
 // Rutas para Paginas
 Route::get('/Paginas', [PaginasController::class, 'index']); 
+Route::get('/Paginas/{id}', [PaginasController::class, 'show']);
 Route::post('/create-Paginas', [PaginasController::class, 'store']);
 Route::delete('/Paginas/{id}', [PaginasController::class, 'destroy']);
 Route::put('/Paginas/{id}', [PaginasController::class, 'update']);
