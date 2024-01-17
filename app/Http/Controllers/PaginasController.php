@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Bitacora;
 use App\Models\Paginas;
 use Illuminate\Http\Request;
 
@@ -22,10 +23,17 @@ class PaginasController extends Controller
     
         try {
             $persona = Paginas::create($request->all());
+
+            Bitacora::create([
+                'codigo'  => 1, 
+                'mensaje' => "se creo una nuevà pagina",
+                'fecha'   => now()->toDateString(),
+                'hora'    => now()->toTimeString(),
+            ]);
     
             return response()->json($persona, 201);
         } catch (\Exception $e) {
-            return response()->json(['error' => 'Error al crear la persona'], 500);
+            return response()->json(['error' => 'Error al crear la pagina'], 500);
         }
     }
     public function show($id)
@@ -48,7 +56,7 @@ class PaginasController extends Controller
 
         $usuario->update($request->all());
 
-        Paginas::create([
+        Bitacora::create([
             'codigo'  => 2, 
             'mensaje' => "Actualización de la pagina {$id}",
             'fecha'   => now()->toDateString(),
@@ -68,7 +76,7 @@ class PaginasController extends Controller
 
         $usuario->delete();
 
-        Paginas::create([
+        Bitacora::create([
             'codigo'  => 3 ,
             'mensaje' => "Eliminación de la pagina {$id}",
             'fecha'   => now()->toDateString(),

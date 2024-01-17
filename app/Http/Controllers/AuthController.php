@@ -76,6 +76,14 @@ class AuthController extends Controller
             'fecha'   => now()->toDateString(),
             'hora'    => now()->toTimeString(),
         ]);
+
+        
+    Bitacora::create([
+        'codigo'  => 6 ,
+        'mensaje' => "El usuario" + $user->id + 'cerro sesion',
+        'fecha'   => now()->toDateString(),
+        'hora'    => now()->toTimeString(),
+    ]);
         return response()->json(['message' => 'Successfully logged out']);
     }
 
@@ -130,7 +138,16 @@ class AuthController extends Controller
     $persona = Persona::create([
         'idusuario' => $user->id, 
         'nombreDeUsuario' => $user->name,
-        'idpersona'=> $user->id
+        'email' => $request->email,
+        'idpersona'=> $user->id,
+   
+    ]);
+
+    Bitacora::create([
+        'codigo'  => 5 ,
+        'mensaje' => "registro de un nuevo usuario",
+        'fecha'   => now()->toDateString(),
+        'hora'    => now()->toTimeString(),
     ]);
 
     return response()->json([
