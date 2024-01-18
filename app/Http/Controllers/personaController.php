@@ -42,6 +42,17 @@ class personaController extends Controller
 
     public function show($id)
     {
+        $persona = User::find($id);
+    
+        if ($persona) {
+            return $persona;
+        } else {
+            return response()->json(['error' => 'Persona no encontrada'], 404);
+        }
+    }
+    
+    public function showUsuario($id)
+    {
         $persona = Persona::find($id);
     
         if ($persona) {
@@ -67,6 +78,20 @@ class personaController extends Controller
             'fecha'   => now()->toDateString(),
             'hora'    => now()->toTimeString(),
         ]);
+
+        return $usuario;
+    }
+
+
+    public function updaterol(Request $request, $id)
+    {
+        $usuario = User::find($id);
+
+        if (!$usuario) {
+            return response()->json(['message' => 'Usuario no encontrado'], 404);
+        }
+
+        $usuario->update($request->all());
 
         return $usuario;
     }

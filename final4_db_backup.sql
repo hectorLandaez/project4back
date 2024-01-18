@@ -31,7 +31,7 @@ CREATE TABLE `bitacoras` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `bitacoras` (
 
 LOCK TABLES `bitacoras` WRITE;
 /*!40000 ALTER TABLE `bitacoras` DISABLE KEYS */;
-INSERT INTO `bitacoras` VALUES (1,'1','Inicio de sesión 6','2024-01-16','09:49:31','2024-01-16 14:49:31','2024-01-16 14:49:31'),(2,'1','Inicio de sesión 6','2024-01-16','16:19:27','2024-01-16 21:19:27','2024-01-16 21:19:27'),(3,'1','Inicio de sesión 6','2024-01-16','16:24:09','2024-01-16 21:24:09','2024-01-16 21:24:09'),(4,'2','Actualización del usuario 6','2024-01-16','16:24:34','2024-01-16 21:24:34','2024-01-16 21:24:34'),(5,'2','Actualización del usuario 6','2024-01-16','16:24:48','2024-01-16 21:24:48','2024-01-16 21:24:48');
+INSERT INTO `bitacoras` VALUES (1,'1','Inicio de sesión 1','2024-01-17','15:01:48','2024-01-17 20:01:48','2024-01-17 20:01:48'),(2,'1','Inicio de sesión 1','2024-01-17','15:01:51','2024-01-17 20:01:51','2024-01-17 20:01:51'),(3,'1','Inicio de sesión 1','2024-01-17','15:01:53','2024-01-17 20:01:53','2024-01-17 20:01:53'),(4,'1','Inicio de sesión 1','2024-01-17','15:01:54','2024-01-17 20:01:54','2024-01-17 20:01:54'),(5,'4','cambio en los permisos del ususario 1','2024-01-17','15:02:17','2024-01-17 20:02:17','2024-01-17 20:02:17'),(6,'4','cambio en los permisos del ususario 2','2024-01-17','15:02:23','2024-01-17 20:02:23','2024-01-17 20:02:23'),(7,'4','cambio en los permisos del ususario 3','2024-01-17','15:02:30','2024-01-17 20:02:30','2024-01-17 20:02:30'),(8,'4','cambio en los permisos del ususario 1','2024-01-17','15:09:28','2024-01-17 20:09:28','2024-01-17 20:09:28'),(9,'4','cambio en los permisos del ususario 5','2024-01-17','15:13:10','2024-01-17 20:13:10','2024-01-17 20:13:10'),(10,'4','cambio en los permisos del ususario 5','2024-01-17','15:14:11','2024-01-17 20:14:11','2024-01-17 20:14:11'),(11,'4','cambio en los permisos del ususario 5','2024-01-17','15:15:28','2024-01-17 20:15:28','2024-01-17 20:15:28'),(12,'2','Actualización del usuario 1','2024-01-17','15:23:56','2024-01-17 20:23:56','2024-01-17 20:23:56'),(13,'4','cambio en los permisos del rol 2','2024-01-17','15:40:28','2024-01-17 20:40:28','2024-01-17 20:40:28'),(14,'4','cambio en los permisos del rol 2','2024-01-17','15:40:40','2024-01-17 20:40:40','2024-01-17 20:40:40'),(15,'1','Inicio de sesión 1','2024-01-17','19:13:43','2024-01-18 00:13:43','2024-01-18 00:13:43'),(16,'3','Eliminación del usuario 6','2024-01-17','19:30:17','2024-01-18 00:30:17','2024-01-18 00:30:17'),(17,'1','Inicio de sesión 1','2024-01-17','19:30:28','2024-01-18 00:30:28','2024-01-18 00:30:28'),(18,'1','Inicio de sesión 1','2024-01-17','19:33:17','2024-01-18 00:33:17','2024-01-18 00:33:17'),(19,'1','se creo una nuevà pagina','2024-01-17','19:38:49','2024-01-18 00:38:49','2024-01-18 00:38:49'),(20,'1','Inicio de sesión 1','2024-01-17','19:47:37','2024-01-18 00:47:37','2024-01-18 00:47:37'),(21,'1','Inicio de sesión 1','2024-01-18','15:11:22','2024-01-18 20:11:22','2024-01-18 20:11:22'),(22,'2','Actualización del usuario 1','2024-01-18','15:42:35','2024-01-18 20:42:35','2024-01-18 20:42:35'),(23,'2','Actualización del usuario 1','2024-01-18','15:43:14','2024-01-18 20:43:14','2024-01-18 20:43:14'),(24,'2','Actualización del usuario 1','2024-01-18','15:44:57','2024-01-18 20:44:57','2024-01-18 20:44:57'),(25,'2','Actualización del usuario 1','2024-01-18','16:15:51','2024-01-18 21:15:51','2024-01-18 21:15:51'),(26,'2','Actualización del usuario 1','2024-01-18','16:20:58','2024-01-18 21:20:58','2024-01-18 21:20:58');
 /*!40000 ALTER TABLE `bitacoras` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -85,7 +85,7 @@ CREATE TABLE `migrations` (
   `migration` varchar(191) NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,7 +94,7 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES (22,'2014_10_12_000000_create_users_table',1),(23,'2014_10_12_100000_create_password_reset_tokens_table',1),(24,'2019_08_19_000000_create_failed_jobs_table',1),(25,'2019_12_14_000001_create_personal_access_tokens_table',1),(26,'2024_01_10_053349_create_roles_table',1),(27,'2024_01_13_090115_create_personas_table',1),(28,'2024_01_15_113410_create_bitacoras_table',1),(29,'2024_01_16_095351_create_paginas_table',2);
+INSERT INTO `migrations` VALUES (49,'2014_10_12_000000_create_users_table',1),(50,'2014_10_12_100000_create_password_reset_tokens_table',1),(51,'2019_08_19_000000_create_failed_jobs_table',1),(52,'2019_12_14_000001_create_personal_access_tokens_table',1),(53,'2024_01_10_053349_create_roles_table',1),(54,'2024_01_13_090115_create_personas_table',1),(55,'2024_01_15_113410_create_bitacoras_table',1),(56,'2024_01_16_095351_create_paginas_table',1);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,7 +113,7 @@ CREATE TABLE `paginas` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -122,7 +122,7 @@ CREATE TABLE `paginas` (
 
 LOCK TABLES `paginas` WRITE;
 /*!40000 ALTER TABLE `paginas` DISABLE KEYS */;
-INSERT INTO `paginas` VALUES (1,'hector@gmail.com','pagina de prueba','pagina para probar','2024-01-16 21:48:35','2024-01-16 21:48:35'),(2,'pagina2@gmail.com','pagina2','pagina 2','2024-01-16 21:52:17','2024-01-16 21:52:17'),(3,'pagina2@gmail.com','pagina2','pagina 2','2024-01-16 21:52:19','2024-01-16 21:52:19');
+INSERT INTO `paginas` VALUES (1,'http://localhost:5173/CreatePagina','prueba','pagina de prueba','2024-01-18 00:38:49','2024-01-18 00:38:49');
 /*!40000 ALTER TABLE `paginas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -191,7 +191,7 @@ DROP TABLE IF EXISTS `personas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `personas` (
-  `idpersona` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `idusuario` bigint(20) unsigned DEFAULT NULL,
   `nombreDeUsuario` varchar(191) DEFAULT NULL,
   `primernombre` varchar(191) DEFAULT NULL,
@@ -199,10 +199,12 @@ CREATE TABLE `personas` (
   `primerapellido` varchar(191) DEFAULT NULL,
   `segundoapellido` varchar(191) DEFAULT NULL,
   `email` varchar(191) DEFAULT NULL,
+  `habilitado` varchar(191) NOT NULL DEFAULT 'si',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`idpersona`),
-  CONSTRAINT `personas_idpersona_foreign` FOREIGN KEY (`idpersona`) REFERENCES `users` (`id`)
+  PRIMARY KEY (`id`),
+  KEY `personas_idusuario_foreign` (`idusuario`),
+  CONSTRAINT `personas_idusuario_foreign` FOREIGN KEY (`idusuario`) REFERENCES `users` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -212,7 +214,7 @@ CREATE TABLE `personas` (
 
 LOCK TABLES `personas` WRITE;
 /*!40000 ALTER TABLE `personas` DISABLE KEYS */;
-INSERT INTO `personas` VALUES (1,1,'shields.llewellyn','Drake','Henry','Medhurst','Nikolaus','rrogahn@yost.com','2024-01-16 14:43:55','2024-01-16 14:43:55'),(2,2,'gkris','Elenor','Brandi','Jerde','Heidenreich','hickle.lonzo@vonrueden.com','2024-01-16 14:43:56','2024-01-16 14:43:56'),(3,3,'monty94','Elbert','Einar','Jacobson','Mills','hondricka@hotmail.com','2024-01-16 14:43:56','2024-01-16 14:43:56'),(4,4,'mraz.rosella','Maeve','Ewell','Kshlerin','Nitzsche','whaley@hotmail.com','2024-01-16 14:43:56','2024-01-16 14:43:56'),(5,5,'torey.daniel','Annabel','Dayana','Leffler','Champlin','mervin10@hotmail.com','2024-01-16 14:43:56','2024-01-16 14:43:56'),(6,6,'admin','hector','jose','landaez','garcia',NULL,'2024-01-16 14:49:26','2024-01-16 21:24:48');
+INSERT INTO `personas` VALUES (1,1,'admin','admin','admin','admin','adminn','admin@admin','si','2024-01-17 09:25:18','2024-01-18 21:20:58'),(2,2,'hector.dev',NULL,NULL,NULL,NULL,'hector@hector','no','2024-01-17 09:26:13','2024-01-17 20:02:23'),(3,3,'luis.dev',NULL,NULL,NULL,NULL,'luis@luis','no','2024-01-17 09:26:37','2024-01-17 20:02:30'),(4,4,'jose.dev',NULL,NULL,NULL,NULL,'jose@jose','si','2024-01-17 09:27:07','2024-01-17 09:27:07'),(5,5,'francisco.dev',NULL,NULL,NULL,NULL,'francisco@francisco','no','2024-01-17 09:27:40','2024-01-17 20:15:27');
 /*!40000 ALTER TABLE `personas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -224,13 +226,13 @@ DROP TABLE IF EXISTS `roles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `roles` (
-  `idrol` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `rol` varchar(191) NOT NULL,
   `estado` varchar(191) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`idrol`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -239,7 +241,7 @@ CREATE TABLE `roles` (
 
 LOCK TABLES `roles` WRITE;
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
-INSERT INTO `roles` VALUES (1,'admin','Activo','2024-01-16 14:43:46','2024-01-16 14:43:46'),(2,'usuario','Activo','2024-01-16 14:43:46','2024-01-16 14:43:46'),(3,'maestro','desactivar','2024-01-16 14:50:16','2024-01-16 14:50:16');
+INSERT INTO `roles` VALUES (1,'admin','Activo','2024-01-17 20:34:59','2024-01-17 20:34:59'),(2,'usuario','inactivo','2024-01-17 20:34:59','2024-01-17 20:40:40');
 /*!40000 ALTER TABLE `roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -258,7 +260,6 @@ CREATE TABLE `users` (
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(191) NOT NULL,
   `idrol` bigint(20) unsigned NOT NULL DEFAULT 2,
-  `habilitado` varchar(191) NOT NULL DEFAULT 'si',
   `remember_token` varchar(100) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -273,7 +274,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,NULL,'shields.llewellyn','rrogahn@yost.com',NULL,'shields.llewellyn',2,'si','WCfy0AXlc5','2024-01-16 14:43:55','2024-01-16 14:43:55'),(2,NULL,'gkris','hickle.lonzo@vonrueden.com',NULL,'gkris',2,'si','phMVgjdJlf','2024-01-16 14:43:55','2024-01-16 14:43:55'),(3,NULL,'monty94','hondricka@hotmail.com',NULL,'monty94',2,'si','xdIZ7hhJ2H','2024-01-16 14:43:56','2024-01-16 14:43:56'),(4,NULL,'mraz.rosella','whaley@hotmail.com',NULL,'mraz.rosella',2,'si','2pLvmEgOt4','2024-01-16 14:43:56','2024-01-16 14:43:56'),(5,NULL,'torey.daniel','mervin10@hotmail.com',NULL,'torey.daniel',2,'si','NwY3JecncK','2024-01-16 14:43:56','2024-01-16 14:43:56'),(6,NULL,'admin','admin@admin',NULL,'$2y$12$yEZl4wlxmd3cIhKQIIv7ROvssaxRaZUm9XCBN5IZsSHmXiaQBBOWK',2,'si',NULL,'2024-01-16 14:49:26','2024-01-16 14:49:26');
+INSERT INTO `users` VALUES (1,NULL,'admin','admin@admin',NULL,'$2y$12$7jsep2wU4Bwqlgc7qx0sRevB2n3WCatAGuVEqKZPxMGSKBm0Td8yS',2,NULL,'2024-01-17 09:25:18','2024-01-17 09:25:18'),(2,NULL,'hector.dev','hector@hector',NULL,'$2y$12$nirYbNKZ93D66yHAdB88guOXzsBvhkw9ia7NpYAc0xN.0nIPKgPb6',2,NULL,'2024-01-17 09:26:12','2024-01-17 09:26:12'),(3,NULL,'luis.dev','luis@luis',NULL,'$2y$12$amcv/gi73HI62qLp6iuJwuKoYjL.BnasRpNzLfd1qaREwfcT/WpXO',2,NULL,'2024-01-17 09:26:37','2024-01-17 09:26:37'),(4,NULL,'jose.dev','jose@jose',NULL,'$2y$12$MknygZjzLJv5FdowiIL2xe1gj6N.jIYkSIS.sAkz1RiPXDecKxqM.',2,NULL,'2024-01-17 09:27:07','2024-01-17 09:27:07'),(5,NULL,'francisco.dev','francisco@francisco',NULL,'$2y$12$l4Yi7RAa6o9OgsPqJ9C0o.biHxMcfyfU6GmGLfdlAdVUPWeWEc0f2',2,NULL,'2024-01-17 09:27:40','2024-01-17 09:27:40'),(6,NULL,'harold.dev','harold@harold',NULL,'$2y$12$b597cCLGFECHVm0hGwO7/u1Tz4B/g6gNlsih5J3mxRneugC24R9H2',2,NULL,'2024-01-17 20:37:29','2024-01-17 20:37:29');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -286,4 +287,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-16 12:11:06
+-- Dump completed on 2024-01-18 12:19:54
